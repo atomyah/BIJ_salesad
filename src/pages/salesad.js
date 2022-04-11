@@ -19,10 +19,16 @@ import styles from "./salesad.module.css"
 import Twitter_Logo_Blue from '../images/Twitter_Logo_Blue.svg'
 import YouTube_Logo from '../images/youtube-logo.svg'
 
-import { text } from "@fortawesome/fontawesome-svg-core"
+import { Helmet } from "react-helmet"
 
 
 const SalesadPage = () => (
+  <div>
+      <Helmet>
+        <html lang="ja" />
+        <title>ベンゾ系睡眠薬・抗不安薬の安全な離脱方法 "改訂版"</title>
+        <meta name="description" content="ベンゾ系睡眠薬・抗不安薬の安全な離脱方法、アマゾンで販売中" />
+      </Helmet>
             <div>
               <section>
                   <div className={styles.main_image}>
@@ -198,9 +204,8 @@ const SalesadPage = () => (
                 </Nav>
               </Navbar>       
  
-            </div>
-              
-            
+            </div>      
+  </div>            
 )
 
 export default SalesadPage

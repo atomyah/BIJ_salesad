@@ -112,6 +112,20 @@ const IndexPage = ({ data }) => (
               <h2 className={Style.h2Size}>動画紹介</h2>
               <div>
                 <FontAwesomeIcon icon={faVideo} />
+                <a href="https://youtu.be/MC6Odw0jRj8" alt="ベンゾについて医学部でまったく教わらないこと" target="_blank" rel="noreferrer noopener">
+                  心臓病専門医クリスティー・ハーフ医師による<br />『ベンゾについて医学部でまったく教わらないこと』
+                </a>
+                <br />
+                <a href="https://youtu.be/MC6Odw0jRj8" alt="ベンゾについて医学部でまったく教わらないこと" target="_blank" rel="noreferrer noopener">
+                  <Image filename="home_06.png" alt="ベンゾについて医学部でまったく教わらないこと" />
+                </a>
+                <span className={Style.fontSmall}>出典：<a href="https://benzoinfo.com" target="_blank" rel="noreferrer noopener">Benzodiazepine Information Coalition</a>   
+                <br />
+                字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
+              </div>
+              <br />
+              <div>
+                <FontAwesomeIcon icon={faVideo} />
                 <a href="https://youtu.be/n0P2l4ZSx6U" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生－ベンゾクライシス
                   <br />
                 冒頭２分
