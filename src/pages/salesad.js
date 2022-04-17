@@ -9,7 +9,7 @@ import Footer from "../components/footer"
 import SEO from "../components/seo"
 
 import Img01 from "../images/lp_img_book.png"
-import Img02 from "../images/lp_img_p47.png"
+import Img02 from "../images/lp_img_p47_evidence.png"
 import Img03 from "../images/lp_img_p189.png"
 
 import { Container, Navbar, Nav, Button } from 'react-bootstrap'
@@ -33,7 +33,7 @@ const SalesadPage = () => (
               <section>
                   <div className={styles.main_image}>
                       <h1 className={styles.main_title}>
-                        <a href="https://www.amazon.co.jp/gp/product/B09TMTGMPH?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">
+                        <a href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=1e1088961fc8e04b7acd662e10d4103c" target="blank" rel="noreferrer noopener">
                         『ベンゾ系睡眠薬・抗不安薬の安全な離脱方法 "改訂版"』発売中
                         </a>
                       </h1>
@@ -46,7 +46,7 @@ const SalesadPage = () => (
                   <FadeIn.Right>
                     <img src={Img01} alt="" className={styles.img} />
                     <br /><br />
-                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B09TMTGMPH?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
+                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=1e1088961fc8e04b7acd662e10d4103c" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
                     <br />
                   </FadeIn.Right>
                     <div className={styles.description}>
@@ -56,10 +56,11 @@ const SalesadPage = () => (
                       <FadeIn.Up>
                         <p className={styles.text}>
                           ベンゾジアゼピン減薬を安全に行うための、<a href="https://benzoinfojapan.org/doctors-article/23" target="_blank" rel="noreferrer noopener">公的機関（米国FDA－食品医薬品局）が指針を定めた大原則</a>があります。
+                          「減薬は必ず漸減テーパー法を使用してください。<strong>すべての患者に一律に適した漸減スケジュールはありません</strong>」
                         </p>
                         <span className={styles.subtext}>
                            「第4章 おもな減薬方法ガイダンス」
-                        </span>にて解説
+                        </span>にて
                       </FadeIn.Up>
                     </div>            
                 </div>
@@ -69,7 +70,7 @@ const SalesadPage = () => (
                   <FadeIn.Right>
                     <img src={Img02} alt="" className={styles.img} />
                     <br /><br />
-                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B09TMTGMPH?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
+                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=1e1088961fc8e04b7acd662e10d4103c" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
                     <br />                 
                   </FadeIn.Right>
                     <div className={styles.description}>
@@ -79,6 +80,7 @@ const SalesadPage = () => (
                       <FadeIn.Up>
                         <p className={styles.text}>
                           １０年、２０年服用していても、そのことが問題になるわけではありません。焦って中止したり減らしたりしないように。
+                          「<strong>服用期間と離脱症状の厳しさの間に相関性はありません</strong>」
                         </p>
                         <span className={styles.subtext}>
                            「第2章 ベンゾジアゼピン依存と離脱症状」
@@ -92,7 +94,7 @@ const SalesadPage = () => (
                   <FadeIn.Right>
                     <img src={Img03} alt="" className={styles.img} />
                     <br /><br />
-                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B09TMTGMPH?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
+                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=1e1088961fc8e04b7acd662e10d4103c" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
                     <br />                  
                   </FadeIn.Right>
                     <div className={styles.description}>
@@ -102,6 +104,7 @@ const SalesadPage = () => (
                       <FadeIn.Up>
                         <p className={styles.text}>
                           画像付きで減薬手順をくわしく解説しています。他の薬物との相互作用も可能な限り紹介しています。
+                          「<strong>注意！誰もが水溶液タイトレーションを使えるわけではありません</strong>」
                         </p>
                         <span className={styles.subtext}>
                            「第6章 減薬実践Ⅱ」
@@ -118,19 +121,19 @@ const SalesadPage = () => (
                     <div className={styles.description}>
                       <FadeIn.Up>
                         <p className={styles.text}>
-                        ●圧倒的な情報量。とにかく薬やめろ的なトンデモ本とは一線を画す内容です。これは当事者本人による医学実用書です。
+                        ●圧倒的な情報量。とにかく薬やめろ的なトンデモ本とは一線を画す内容です。これは当事者本人による<strong>医学実用書</strong>です。
                         </p>
                         <p className={styles.text}>
                         <span className={styles.subtext}>●医師ですとか、薬剤師、臨床心理士の方に、キンドル版を手渡すことができないのが問題です。良い本だと思いますが、印刷体がほしい。</span>
                         </p>
                         <p className={styles.text}>
-                        ●元医療関係者です。この手の本は何冊か読みましたが信頼できる内容はこちらだけでした。
+                        ●元医療関係者です。この手の本は何冊か読みましたが信頼できる内容はこちらだけでした。<strong>確固としたエビデンスに基づいて書かれた一冊</strong>です。
                         </p>
                         <p className={styles.text}>
                         <span className={styles.subtext}>●各ページにQRコードがあるので、参照すべき医学文献や動画が簡単に閲覧できます。</span>
                         </p>
                         <br />
-                        <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B09TMTGMPH?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
+                        <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=1e1088961fc8e04b7acd662e10d4103c" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
                         <br />                           
                       </FadeIn.Up>
                     </div>
