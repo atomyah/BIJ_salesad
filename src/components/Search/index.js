@@ -41,6 +41,7 @@ const Content = () => (
     </main>
 );
 
+
 // InstantSearchのコンフィグとレンダリング
 const Search = () => {
     const [flag, setFlag] = React.useState(false)
@@ -56,6 +57,9 @@ const Search = () => {
             
             <SearchBox
                 className="search-bar"
+                class="ais-SearchBox-input"
+                submit={<>検索する</>}
+                reset={<>リセット</>}
                 translations={{ placeholder: 'サイト内検索' }}
                 onSubmit={(event) => {
                     event.preventDefault();
