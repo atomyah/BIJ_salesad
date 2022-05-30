@@ -3,7 +3,10 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container, Row, Col, Breadcrumb } from 'react-bootstrap'
+import { Container, Row, Col, Breadcrumb, Figure } from 'react-bootstrap'
+
+import HonImage from "../images/hon-hyosi.jpg"
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
 import Style from './article.module.css'
@@ -56,11 +59,11 @@ const Articlearticle = props => {
 
         <div className={Style.banner}>
           <p>
-            <FontAwesomeIcon icon={faEdit} style={{color: `darkolivegreen` }} />
             <a href="https://www.amazon.co.jp/gp/product/B09TMTGMPH?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">
-              書籍『ベンゾ系睡眠薬・抗不安薬の安全な離脱方法　改訂版』（A5版284ページ）
+            書籍『ベンゾ系睡眠薬・抗不安薬の安全な離脱方法　改訂版』（A5版284ページ）販売中
+            <br />
+            <Figure.Image width={70} src={HonImage} /> 
             </a>
-            販売中
           </p>
         </div>
 

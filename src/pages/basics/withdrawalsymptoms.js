@@ -5,7 +5,9 @@ import { graphql, StaticQuery } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
-import { Container, Table } from 'react-bootstrap'
+import HonImage from "../../images/hon-hyosi.jpg"
+
+import { Container, Table, Figure } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faUser, faBold } from '@fortawesome/free-solid-svg-icons'
 
@@ -19,6 +21,17 @@ const WithdrawalSymptoms = () => (
             image="/twitterimg/benzoberry_s.jpg" 
             lang="ja"
             />
+
+            <div className={Style.banner}>
+            <p>
+                <a href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=94f04c0b99835aaa944655bc2d852dda" target="blank" rel="noreferrer noopener">
+                書籍『ベンゾ系睡眠薬・抗不安薬の安全な離脱方法　改訂版』（A5版284ページ）販売中
+                <br />
+                <Figure.Image width={70} src={HonImage} /> 
+                </a>
+            </p>
+            </div>
+
             <h1 className={Style.h1Size}>ベンゾジアゼピン離脱症状一覧</h1>
             <p>
                 ※ 下記すべての症状を呈するわけではありません。<br />

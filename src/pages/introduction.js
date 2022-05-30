@@ -5,7 +5,9 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-import { Container, Row, Col, Jumbotron } from 'react-bootstrap'
+import HonImage from "../images/hon-hyosi.jpg"
+
+import { Container, Row, Col, Jumbotron, Figure } from 'react-bootstrap'
 import Style from './introduction.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -27,9 +29,10 @@ const IntroductionPage = () => (
           <p>
             <FontAwesomeIcon icon={faEdit} style={{color: `darkolivegreen` }} />
             <a href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=94f04c0b99835aaa944655bc2d852dda" target="blank" rel="noreferrer noopener">
-              『ベンゾジアゼピン薬の安全な離脱方法』（Kindle版）
+            書籍『ベンゾ系睡眠薬・抗不安薬の安全な離脱方法　改訂版』（A5版284ページ）販売中
+              <br />
+              <Figure.Image width={70} src={HonImage} /> 
             </a>
-            発売中
           </p>
         </div>
 
