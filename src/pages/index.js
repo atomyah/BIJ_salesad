@@ -64,7 +64,7 @@ const IndexPage = ({ data }) => (
                     <React.Fragment key={articles.id}>
                       <div>
                         <Link to={`/${category}-article/${articles.num}`} alt={articles.title}>
-                          {articles.title}
+                          記事『{articles.title}』
                         </Link>
                           を作成しました
                         <Badge variant="danger">新</Badge>
@@ -82,6 +82,7 @@ const IndexPage = ({ data }) => (
           <Row>
             <Col>
               <h2 className={Style.h2Size}>更新情報</h2>
+            {/*
                   <div>
                     <Link to="/patients-article/8" alt="管理人のベンゾ減薬記録">
                     管理人のベンゾ減薬記録
@@ -96,13 +97,16 @@ const IndexPage = ({ data }) => (
                     {` `}is updated
                     <Badge variant="info">更</Badge>
                   </div>
+            */}
             </Col>
           </Row>
           <Row>
             <Col>
               <h2 className={Style.h2Size}>ニュースリンク</h2>
+              {/*
               <a href="https://medical.jiji.com/topics/1495" alt="睡眠薬の中止で離脱症状" target="_blank" rel="noreferrer noopener">「睡眠薬や抗不安薬の中止で離脱症状」（メディカルトリビューン＝時事）</a>
-              <br /><span className={Style.fontSmallCrimson}>週刊誌等でベンゾの危険性についての記事が多くなっています。それらを読んで<u>けしてすぐに止めたり減薬を急がないでください</u>。充分に学べば不安になることはありません。</span>
+              */}
+              <br /><span className={Style.fontSmallCrimson}>週刊誌等でベンゾの認知症の原因とする記事が多くなっています。ベンゾと認知症との関連性は数多くの医学研究では今だグレーです。それらを読んで<u>けしてすぐに止めたり減薬を急がないでください</u>。</span>
             </Col>
           </Row>
         </Col>
@@ -124,6 +128,7 @@ const IndexPage = ({ data }) => (
                 字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
               </div>
               <br />
+            {/*
               <div>
                 <FontAwesomeIcon icon={faVideo} />
                 <a href="https://youtu.be/n0P2l4ZSx6U" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生－ベンゾクライシス
@@ -138,6 +143,7 @@ const IndexPage = ({ data }) => (
                 字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
               </div>
               <br />
+            */}
               <div>
                 <FontAwesomeIcon icon={faVideo} />
                   <a href="https://youtu.be/7ul9kCDTUCw" alt="臨床心理学者ジョーダン・ピーターソンのベンゾ離脱体験" target="_blank" rel="noreferrer noopener">
@@ -189,10 +195,6 @@ const IndexPage = ({ data }) => (
               <div>
               <FontAwesomeIcon icon={faVideo} />
                 <a href="https://youtu.be/Xk06U78svGI" alt="臨床薬理学者ジム・ライト博士" target="_blank" rel="noreferrer noopener">臨床薬理学者ジム・ライト博士インタビュー 32分</a>
-              </div>
-              <div>
-                  <FontAwesomeIcon icon={faVideo} />
-                  <a href="https://youtu.be/c9W_3Qud8Ds" alt="ベンゾジアゼピン離脱の困難性" target="_blank" rel="noreferrer noopener">"スタンフォード大学精神科医 アナ・ランプキー教授インタビュー" 4分</a>
               </div>
               <div>
                   <FontAwesomeIcon icon={faVideo} />
