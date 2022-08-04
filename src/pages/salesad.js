@@ -33,11 +33,10 @@ const SalesadPage = () => (
               <section>
                   <div className={styles.main_image}>
                       <h1 className={styles.main_title}>
-                        <a href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=1e1088961fc8e04b7acd662e10d4103c" target="blank" rel="noreferrer noopener">
-                        『ベンゾ系睡眠薬・抗不安薬の安全な離脱方法 "改訂版"』発売中
+                        <a href="https://www.amazon.co.jp/gp/product/B0B8BJZ5T6?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">
+                        『ベンゾ系睡眠薬・抗不安薬の安全な離脱方法 "改訂版"』～ムチャな減断薬に意味はない～　発売中
                         </a>
                       </h1>
-                      <p className={styles.sub_title}>❝ムチャな減断薬に意味はない❞</p>
                       <div className={styles.pic_down}></div>
                   </div>
               </section>              
@@ -46,7 +45,7 @@ const SalesadPage = () => (
                   <FadeIn.Right>
                     <img src={Img01} alt="" className={styles.img} />
                     <br /><br />
-                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=1e1088961fc8e04b7acd662e10d4103c" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
+                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0B8BJZ5T6?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
                     <br />
                   </FadeIn.Right>
                     <div className={styles.description}>
@@ -70,7 +69,7 @@ const SalesadPage = () => (
                   <FadeIn.Right>
                     <img src={Img02} alt="" className={styles.img} />
                     <br /><br />
-                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=1e1088961fc8e04b7acd662e10d4103c" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
+                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0B8BJZ5T6?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
                     <br />                 
                   </FadeIn.Right>
                     <div className={styles.description}>
@@ -80,7 +79,7 @@ const SalesadPage = () => (
                       <FadeIn.Up>
                         <p className={styles.text}>
                           １０年、２０年服用していても、そのことが問題になるわけではありません。焦って中止したり減らしたりしないように。
-                          「<strong>服用期間と離脱症状の厳しさの間に相関性はありません</strong>」
+                          「<strong>服用期間と離脱症状の厳しさに相関性はありません</strong>」(E Schweizer, et al. 1990)
                         </p>
                         <span className={styles.subtext}>
                            「第2章 ベンゾジアゼピン依存と離脱症状」
@@ -94,7 +93,7 @@ const SalesadPage = () => (
                   <FadeIn.Right>
                     <img src={Img03} alt="" className={styles.img} />
                     <br /><br />
-                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=1e1088961fc8e04b7acd662e10d4103c" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
+                    <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0B8BJZ5T6?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
                     <br />                  
                   </FadeIn.Right>
                     <div className={styles.description}>
@@ -133,7 +132,7 @@ const SalesadPage = () => (
                         <span className={styles.subtext}>●各ページにQRコードがあるので、参照すべき医学文献や動画が簡単に閲覧できます。</span>
                         </p>
                         <br />
-                        <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=1e1088961fc8e04b7acd662e10d4103c" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
+                        <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0B8BJZ5T6?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
                         <br />                           
                       </FadeIn.Up>
                     </div>
@@ -155,8 +154,8 @@ const SalesadPage = () => (
                         ●引用・参考医学文献８０
                         </p>
                         <p className={styles.text}>
-                        ●書籍　2,783円（税込み）<br />
-                        ●キンドル版 1,260円 (税込み）
+                        ●書籍　2,650円（税込み）<br />
+                        ●キンドル版 1,110円 (税込み）
                         </p>
                         <p className={styles.text}>
                         ●ベンゾジアゼピン情報センター著 
@@ -168,7 +167,7 @@ const SalesadPage = () => (
                         　YouTube：<a href="https://www.youtube.com/channel/UCkZs4B_mj2ffOLFWO2TrAbg" target="_blank" rel="noreferrer noopener"><img src={YouTube_Logo} width={32} alt={'YouTube'} />ベンゾ情報センター</a>
                         </p>
                         <br /><br />
-                        <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B09TMTGMPH?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
+                        <Button variant="warning" size="lg" block href="https://www.amazon.co.jp/gp/product/B0B8BJZ5T6?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">アマゾンで購入</Button>
                         <br />                    
                       </FadeIn.Up>
 
