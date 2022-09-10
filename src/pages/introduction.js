@@ -106,11 +106,11 @@ const IntroductionPage = () => (
       薬害エイズ：1800人<br />
       薬害肝炎：推定10,000人以上<br />
       子宮頸がんワクチン：1,739人以上<br />
-      ベンゾジアゼピン：推定1,204,500人（<span className={Style.fontSmall}><Link to="medias-article/3" target="blank" rel="noreferrer noopener">長期服用者730万人</Link>のうちの50% × 33%と計算。
-      つまり長期服薬者でも身体依存形成されないグループが約半数。残りの身体依存形成される半数のうち、厳しい離脱症状を経験するのはさらにそのうちの3分の1と計算
-      （参考論文：
-      <Link to="doctors-article/11">"Treatment of Benzodiazepine Dependence</Link>　記事：<a href="https://www.benzo.org.uk/kwotez.htm" target="blank" rel="noreferrer noopener">BENZODIAZEPINES</a>）。
-      <u>この120万人には飲み続けているので身体依存状態にあることに気づかない予備軍も含まれます</u>。
+      サリドマイド：認定309人（推定数千人）<br />
+      ベンゾジアゼピン：重篤被害者数50万人、重度以上被害者140万人
+      （<span className={Style.fontSmall}><Link to="../medias-article/3" target="blank" rel="noreferrer noopener">長期服用者730万人</Link>
+      のうち重篤被害者者を7%、重度以上被害者を20%と計算（根拠となる参考記事：<Link to="../patients-article/11" target="blank" rel="noreferrer noopener">ベンゾ離脱症状が重症になる確率は？</Link>）。
+      これらの50万人、140万人には、飲み続けているので重度身体依存状態にあることに気づいてない予備軍も含まれる。
       </span><br />
        </p>
       <p>※しかも半世紀前から"<span className={Style.fontCrimson}>一生飲んでも問題のない薬</span>"として連綿と漫然処方され続け、

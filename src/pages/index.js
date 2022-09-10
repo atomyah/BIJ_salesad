@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => (
                 <Row>
                   <Col>
                     <Badge variant="danger">新</Badge>
-                    <a href="https://www.amazon.co.jp/gp/product/B09TMTGMPH?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">
+                    <a href="https://www.amazon.co.jp/gp/product/B0B8BJZ5T6?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">
                       書籍『ベンゾ系睡眠薬・抗不安薬の安全な離脱方法 改訂版』アマゾンで販売中
                     </a>
                     <span className={Style.fontSmall}>　A5判284ページ</span>
@@ -82,6 +82,13 @@ const IndexPage = ({ data }) => (
           <Row>
             <Col>
               <h2 className={Style.h2Size}>更新情報</h2>
+                <div>
+                    <Link to="/contact" alt="お問い合わせ">
+                    お問い合わせ（Contact Form）ページ
+                    </Link>
+                      を更新しました
+                    <Badge variant="info">更</Badge>
+                </div>
             {/*
                   <div>
                     <Link to="/patients-article/8" alt="管理人のベンゾ減薬記録">
@@ -106,7 +113,7 @@ const IndexPage = ({ data }) => (
               {/*
               <a href="https://medical.jiji.com/topics/1495" alt="睡眠薬の中止で離脱症状" target="_blank" rel="noreferrer noopener">「睡眠薬や抗不安薬の中止で離脱症状」（メディカルトリビューン＝時事）</a>
               */}
-              <br /><span className={Style.fontSmallCrimson}>週刊誌等でベンゾの認知症の原因とする記事が多くなっています。ベンゾと認知症との関連性は数多くの医学研究では今だグレーです。それらを読んで<u>けしてすぐに止めたり減薬を急がないでください</u>。</span>
+              
             </Col>
           </Row>
         </Col>
@@ -213,17 +220,22 @@ const IndexPage = ({ data }) => (
             何年服薬していても離脱症状がまったく無いか、あるいは軽度で簡単にやめられる方はたくさんいます。
             しかし<span className={Style.fontCrimson}>重度の身体依存状態かそうでないかを前もって知る方法はありません</span>。
             したがって、<br />
-            <br />１．まず、服薬中でも不安になる必要はまったくありません。<strong>いきなりやめないように！</strong>まだ疾患が寛解していないなど、投薬が必要な状態にあるなら主治医の処方に従いそのまま服薬を継続してください
-            <br />２．減薬するにあたり<span className={Style.fontCrimson}>離脱症状を発症した場合は、減薬を一時停止するかあるいはベンゾジアゼピンを以前の投与量に上げ</span>、必ず容態が安定してから、再び徐々に減薬してください
-            （<Link to="/doctors-article/23">『米FDA ー ベンゾジアゼピン薬のブラックボックス警告更新要請』</Link>）
+            <br />１．まず、<strong>いきなりやめないように！</strong>。服薬中でも不安になる必要はまったくありません。原疾患が寛解していないなど、投薬が必要な状態にあるなら主治医の処方に従いそのまま服薬を継続してください。
+            <br />２．減薬するにあたり<span className={Style.fontCrimson}>離脱症状を発症した場合は、減薬を一時停止するかあるいはベンゾジアゼピンを以前の投与量に上げ</span>、必ず容態が安定してから、再びさらにゆっくりとしたペースで減薬してください
+            （<Link to="/doctors-article/23">『米FDA ー ベンゾジアゼピン薬のブラックボックス警告更新要請』</Link>より）
+            <br /> 
             <br /> 
             <h2 className={Style.h2Size}>ベンゾジアゼピン依存について</h2>
             ベンゾ依存はアルコール依存症や薬物依存症と異なり<span className={Style.fontCrimson}>「薬物性神経機能傷害」</span>と言えます。
-            英語ですと<strong>addiction</strong>（アディクション・精神依存）ではなく<strong>physical dependence</strong>（身体依存）であり、米FDAは、急速な減薬によって負った後遺症状を<strong>injury</strong>（傷害）としています
-            （<a href="https://www.benzoinfo.com/wp-content/uploads/2020/11/Benzodiazepine-Information-Coalition-FOIA-FDA-.pdf" target="_blank" rel="noreferrer noopener">『ベンゾジアゼピン長期使用に関する疫学研究レビュー』</a>）。
+            英語ですと<strong>addiction</strong>（アディクション・精神依存）ではなく<strong>physical dependence</strong>（身体依存）であり、<span className={Style.fontCrimson}>米FDAは、急速な減薬によって負った後遺症状を<strong>injury</strong>（傷害）としています</span>
+            （<a href="https://www.benzoinfo.com/wp-content/uploads/2020/11/Benzodiazepine-Information-Coalition-FOIA-FDA-.pdf" target="_blank" rel="noreferrer noopener">『ベンゾジアゼピン長期使用に関する疫学研究レビュー』より</a>）。
             <br />
-            しかしベンゾジアゼピン薬はそのオールマイティな効能もあり、半世紀にわたり<Link to="introduction">不眠や不安だけでなく
-            肩こりや胃痛など様々な身体症状に対して気軽に処方され</Link>つづけ、医療界ではその安全な離脱方法について無知であり続けました。つまり、精神医療に限った話ではありません。
+            <br />
+            しかしベンゾジアゼピン薬はそのオールマイティな効能もあり、半世紀にわたり<Link to="introduction" target="_blank">不眠や不安だけでなく
+            肩こりや胃痛など様々な身体症状に対して気軽に処方され</Link>つづけ、医療界ではその安全な離脱方法について無知であり続けました。
+            つまり、精神医療に限った話ではなく医療界すべてに関わる問題です。
+            <br />
+            そして、日本だけの問題ではなく、ほぼ<Link to="introduction" target="_blank">世界中で同じように起きている薬害問題</Link>です。
             <br />
             <br />このサイトの記事について引用・転載フリーです。必ず「出典：<a href="https://benzoinfojapan.org">ベンゾ情報センター</a>」を追記してください。
 
