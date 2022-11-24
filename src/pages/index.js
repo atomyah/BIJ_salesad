@@ -82,6 +82,13 @@ const IndexPage = ({ data }) => (
           <Row>
             <Col>
               <h2 className={Style.h2Size}>更新情報</h2>
+              <div>
+                    <Link to="/doctors-article/1" alt="お問い合わせ">
+                    「ドクターのみなさまへ」ページ
+                    </Link>
+                      を更新しました
+                    <Badge variant="info">更</Badge>
+                </div>              
                 <div>
                     <Link to="/contact" alt="お問い合わせ">
                     お問い合わせ（Contact Form）ページ
@@ -228,16 +235,22 @@ const IndexPage = ({ data }) => (
             <h2 className={Style.h2Size}>ベンゾジアゼピン依存について</h2>
             ベンゾ依存はアルコール依存症や薬物依存症と異なり<span className={Style.fontCrimson}>「薬物性神経機能傷害」</span>と言えます。
             英語ですと<strong>addiction</strong>（アディクション・精神依存）ではなく<strong>physical dependence</strong>（身体依存）であり、<span className={Style.fontCrimson}>米FDAは、急速な減薬によって負った後遺症状を<strong>injury</strong>（傷害）としています</span>
-            （<a href="https://www.benzoinfo.com/wp-content/uploads/2020/11/Benzodiazepine-Information-Coalition-FOIA-FDA-.pdf" target="_blank" rel="noreferrer noopener">『ベンゾジアゼピン長期使用に関する疫学研究レビュー』より</a>）。
+            （<a href="https://www.benzoinfo.com/wp-content/uploads/2020/11/Benzodiazepine-Information-Coalition-FOIA-FDA-.pdf" target="_blank" rel="noreferrer noopener">『ベンゾジアゼピン長期使用に関する疫学研究レビュー（2020年9月24日）』より</a>）。
             <br />
             <br />
             しかしベンゾジアゼピン薬はそのオールマイティな効能もあり、半世紀にわたり<Link to="introduction" target="_blank">不眠や不安だけでなく
             肩こりや胃痛など様々な身体症状に対して気軽に処方され</Link>つづけ、医療界ではその安全な離脱方法について無知であり続けました。
-            つまり、精神医療に限った話ではなく医療界すべてに関わる問題です。
+            つまり、<span className={Style.fontCrimson}>精神医療に限った話ではなく医療界すべてに関わる問題</span>です。
             <br />
-            そして、日本だけの問題ではなく、ほぼ<Link to="introduction" target="_blank">世界中で同じように起きている薬害問題</Link>です。
+            そして、<span className={Style.fontCrimson}>日本だけの問題ではなく</span>、ほぼ<Link to="introduction" target="_blank">世界中で同じように起きている薬害問題</Link>です。
             <br />
-            <br />このサイトの記事について引用・転載フリーです。必ず「出典：<a href="https://benzoinfojapan.org">ベンゾ情報センター</a>」を追記してください。
+            <br />
+            <br />
+            <br />
+            <article className={Style.fontBlue}>※ 当サイトの記事や動画は、医学論文の翻訳、および米国NPO団体
+            <a href="https://benzoinfo.com" target="_blank" rel="noreferrer noopener">Benzodiazepine Information Coalition（ベンゾジアゼピンインフォメーションコーリション。以下BIC）</a>
+            の記事の翻訳により構成されています。BICの記事はすべてBICの<a href="https://www.benzoinfo.com/about/#board" target="_blank" rel="noreferrer noopener">メディカルアドバイザリーボード</a>
+            による監修を経て掲載されており、当サイトは全面的に記事翻訳掲載の許可を得ています。また当サイトの運営ポリシーとフィロソフィーはBICに準じています。</article>
 
       <div className={Style.divLineSpace}></div>
 
