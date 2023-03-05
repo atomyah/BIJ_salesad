@@ -139,7 +139,7 @@ const IndexPage = ({ data }) => (
                 <a href="https://www.amazon.co.jp/%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB-Robert-Whitaker/dp/B0B8RXQ9YV?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=23SMS1UJG0UWP&keywords=%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB&qid=1677125852&s=instant-video&sprefix=%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB%2Cinstant-video%2C182&sr=1-1&linkCode=ll2&tag=kokkahasan-22&linkId=7a457bfe11a2ecd8a54e5093a040c0b5&language=ja_JP&ref_=as_li_ss_tl" alt="ベンゾについて医学部でまったく教わらないこと" target="_blank" rel="noreferrer noopener">
                   <Image filename="home_04.png" />
                 </a>
-                <span className={Style.fontSmall}>出典：<a href="https://medicatingnormal.com/" target="_blank" rel="noreferrer noopener">Medicating Normal Production Team</a>   
+                <span className={Style.fontSmall}>製作：<a href="https://medicatingnormal.com/" target="_blank" rel="noreferrer noopener">Medicating Normal Production Team</a>   
                 <br />
                 日本語字幕翻訳：<a href="https://benzoinfojapan.org/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
               </div>

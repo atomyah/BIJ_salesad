@@ -6,6 +6,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
 import HonImage from "../../images/hon-hyosi.jpg"
+import MedicatingAd from "./images/movie-hyosi.png"
 
 import { Container, Table, Figure } from 'react-bootstrap'
 import Styles from './benzolist.module.css'
@@ -22,6 +23,30 @@ import { faEdit } from '@fortawesome/free-solid-svg-icons'
         />
 
         <div className={Styles.banner}>
+          <table>
+            <tr>
+              <td rowspan="2">
+                <a href="https://www.amazon.co.jp/%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB-Robert-Whitaker/dp/B0B8RXQ9YV?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=23SMS1UJG0UWP&keywords=%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB&qid=1677125852&s=instant-video&sprefix=%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB%2Cinstant-video%2C182&sr=1-1&linkCode=ll2&tag=kokkahasan-22&linkId=7a457bfe11a2ecd8a54e5093a040c0b5&language=ja_JP&ref_=as_li_ss_tl" target="blank" rel="noreferrer noopener">
+                  <img border="0" src={MedicatingAd} />
+                </a>
+              </td>
+              <td style={{verticalAlign: `top`}}>
+                <a href="https://www.amazon.co.jp/%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB-Robert-Whitaker/dp/B0B8RXQ9YV?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=23SMS1UJG0UWP&keywords=%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB&qid=1677125852&s=instant-video&sprefix=%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB%2Cinstant-video%2C182&sr=1-1&linkCode=ll2&tag=kokkahasan-22&linkId=7a457bfe11a2ecd8a54e5093a040c0b5&language=ja_JP&ref_=as_li_ss_tl" target="blank" rel="noreferrer noopener">
+                  ドキュメンタリー映画『<strong>メディケイティングノーマル ～薬害なき処方を～</strong>』（1時間16分）が<strong>アマゾンプライム</strong>で公開されました！
+                </a>
+                <br />
+                ぜひご観覧ください。
+              </td>
+            </tr>
+            <tr>
+              <td style={{fontSize: `0.9em`, color: `crimson`}}>                 
+                製作：<a href="https://medicatingnormal.com/" target="_blank" rel="noreferrer noopener">Medicating Normal Production Team</a>
+                <br />
+                日本語字幕翻訳：<a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a>
+              </td>
+            </tr>
+          </table>
+          {/* 
           <p>
             <a href="https://www.amazon.co.jp/gp/product/B0B8BJZ5T6?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">
                 書籍『ベンゾ系睡眠薬・抗不安薬の安全な離脱方法　改訂版』（A5版284ページ）販売中）
@@ -29,6 +54,7 @@ import { faEdit } from '@fortawesome/free-solid-svg-icons'
                 <img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B0B8BJZ5T6&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=kokkahasan-22" />
             </a>
           </p>
+          */}
         </div>
 
         <h1 className={Styles.h1Size}>ベンゾ一覧 - ジアゼパム換算表<br /><small class="text-muted">抗不安薬・睡眠薬等価換算表</small></h1>
