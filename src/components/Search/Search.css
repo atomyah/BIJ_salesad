@@ -3,7 +3,8 @@
     width: 100%;
     display: flex;
     background-color: #dce2e9;
-    height: 10vh
+    height: 10vh;
+    margin-bottom: 5vh;
 }
 .search-bar{
     display: flex;
@@ -14,8 +15,7 @@ input{
     max-width: 500px;
     border: none;
     border-radius: .3em;
-    padding: 5px
-
+    padding: 5px;
 }
 .input-empty{
     display: none;
@@ -27,13 +27,13 @@ input{
     width: 80px;
     border: none;
     padding: 5px;
-    color: #c4c4c4
+    color: #413f3f
 }
 .ais-SearchBox-reset{
     width: 80px;
     border: solid;
     padding: 5px;
-    color: #c4c4c4
+    color: #9a7d7d
 }
 main{
     width: 100%;

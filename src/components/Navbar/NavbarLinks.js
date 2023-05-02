@@ -10,7 +10,7 @@ const NavItem = styled(Link)`
   color: #111;
   display: inline-block;
   white-space: nowrap;
-  margin: 0 1vw;
+  margin: 0 1.5vw;
   transition: all 200ms ease-in;
   position: relative;
 
@@ -43,12 +43,13 @@ const NavItem = styled(Link)`
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="/">ベンゾジアゼピン情報センター</NavItem>
+      <NavItem to="/">Home</NavItem>
       <NavItem to="/basics"><FontAwesomeIcon icon={faBookMedical} /> 一般情報</NavItem>
       <NavItem to="/patients"><FontAwesomeIcon icon={faHeart} /> 患者の方へ</NavItem>
       <NavItem to="/doctors"><FontAwesomeIcon icon={faUserMd} /> 医師の方へ</NavItem>
       <NavItem to="/medias"><FontAwesomeIcon icon={faCamera} /> メディアの方へ</NavItem>
-      <a href="https://benzofaq.com" target="_blank" rel="noreferrer noopener"> 質問フォーラム</a>
+      <a href="https://benzofaq.com" target="_blank" rel="noreferrer noopener"
+         style={{ width:`120px`, fontSize: `0.9em`}}> 質問フォーラム</a>
     </>
   )
 }

@@ -6,9 +6,7 @@ import Header from "./header"
 import Footer from "./footer"
 //import "./layout.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Search from './Search'
-
 import Navbar from "./Navbar/Navbar"
 
 
@@ -36,9 +34,13 @@ const Layout = ({ children }) => {
     }
     `}
     </style>
+      <div
+        style={{
+          margin: `0 auto`,
+        }}
+      >
 
-      <Navbar siteTitle={data.site.siteMetadata.title} />
-      <Search />
+      </div>
       <div
         style={{
           margin: `0 auto`,
@@ -48,6 +50,8 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
+        <Navbar siteTitle={data.site.siteMetadata.title} />
+        <Search />
         <main>
              {children}
         </main>

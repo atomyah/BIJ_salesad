@@ -11,14 +11,14 @@ const Navigation = styled.nav`
   justify-content: space-between;
   text-transform: uppercase;
   border-bottom: 2px solid #33333320;
-  margin: 0 auto;
   padding: 0 5vw;
   z-index: 2;
   align-self: center;
+  margin-top: -3vh;
 
   @media (max-width: 768px) {
     position: sticky;
-    height: 8vh;
+    height: 10vh;
     top: 0;
     left: 0;
     right: 0;
@@ -85,6 +85,7 @@ const Hamburger = styled.div`
     opacity: ${props => (props.open ? "0" : "1")};
     transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
     top: 10px;
+
   }
 `
 const Navbar = () => {

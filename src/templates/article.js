@@ -9,7 +9,8 @@ import { faEdit } from '@fortawesome/free-solid-svg-icons'
 import Style from './article.module.css'
 
 import { useLocation } from "@reach/router"
-import { DiscussionEmbed } from "disqus-react";
+//import { DiscussionEmbed } from "disqus-react";
+import { Disqus } from 'gatsby-plugin-disqus';
 //import { FacebookProvider, Comments } from 'react-facebook';
 //import TalkyardCommentsIframe from '@debiki/gatsby-plugin-talkyard';
 //import ItemList from '../components/Comment'
@@ -23,7 +24,7 @@ const Articlearticle = props => {
  /* コメント欄機能Disqusの設定 */
  const slug = useLocation()
  const title = article.title
- const disqusShortname = "bij-site-2";
+ const disqusShortname = "benzoinfojapan";
  const disqusConfig = {
   config: { identifier: slug, title },
 }
@@ -114,8 +115,10 @@ const Articlearticle = props => {
      <br /><br />
      {/*
      <FontAwesomeIcon icon={faEdit} /><span style={{color:`#5a818c`}}>ご自由にコメントをお書きください。管理人の承認作業はありません。</span>
-     <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
      */}
+     <Disqus shortname={disqusShortname} config={disqusConfig} />
+    
+
      {/* <FacebookProvider appId="712789275930386" language="ja_JP">
         <Comments href="http://benzoinfojapan.org" width="100%" />
       </FacebookProvider>
