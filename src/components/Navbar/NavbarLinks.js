@@ -7,7 +7,7 @@ import { faHome,faComments,faCamera,faUserMd,faHeart,faBookMedical } from '@fort
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  color: #111;
+  color: gray;
   display: inline-block;
   white-space: nowrap;
   margin: 0 1.5vw;
@@ -43,13 +43,13 @@ const NavItem = styled(Link)`
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="/">Home</NavItem>
-      <NavItem to="/basics"><FontAwesomeIcon icon={faBookMedical} /> 一般情報</NavItem>
-      <NavItem to="/patients"><FontAwesomeIcon icon={faHeart} /> 患者の方へ</NavItem>
-      <NavItem to="/doctors"><FontAwesomeIcon icon={faUserMd} /> 医師の方へ</NavItem>
-      <NavItem to="/medias"><FontAwesomeIcon icon={faCamera} /> メディアの方へ</NavItem>
-      <a href="https://benzofaq.com" target="_blank" rel="noreferrer noopener"
-         style={{ width:`120px`, fontSize: `0.9em`}}> 質問フォーラム</a>
+      <NavItem to="/" style={{color: `#6d6d6d`}}>ベンゾ情報センター</NavItem>
+      <NavItem to="/basics" style={{color: `#6d6d6d`}}>一般情報</NavItem>
+      <NavItem to="/patients" style={{color: `#6d6d6d`}}>患者の方へ</NavItem>
+      <NavItem to="/doctors" style={{color: `#6d6d6d`}}>医師の方へ</NavItem>
+      <NavItem to="/medias" style={{color: `#6d6d6d`}}>メディアの方へ</NavItem>
+      <NavItem><a href="https://benzofaq.com" target="_blank" rel="noreferrer noopener"
+         style={{ width:`120px`, fontSize: `0.9em`, color: `#6d6d6d`}}> 質問フォーラム</a></NavItem>
     </>
   )
 }
