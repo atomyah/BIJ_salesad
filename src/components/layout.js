@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Search from './Search'
 import Navbar from "./Navbar/Navbar"
 
+import { Helmet } from "react-helmet"
+
 
 const Layout = ({ children }) => {
 
@@ -24,8 +26,24 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <style type="text/css">
-    {`
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Helmet>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-RWBXELGG0V"
+        ></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RWBXELGG0V');
+          `}
+        </script>
+      </Helmet>
+
+      <style type="text/css">
+        {`
     .input-empty {
       display:none
     }
@@ -33,7 +51,8 @@ const Layout = ({ children }) => {
       border: 1px solid black;
     }
     `}
-    </style>
+      </style>
+
       <div
         style={{
           margin: `0 auto`,
@@ -53,7 +72,7 @@ const Layout = ({ children }) => {
         <Navbar siteTitle={data.site.siteMetadata.title} />
         <Search />
         <main>
-             {children}
+          {children}
         </main>
       </div>
       <Footer />

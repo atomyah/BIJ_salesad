@@ -31,21 +31,15 @@ const Contact = () => (
             <br />
             <Form.Control as="textarea" placeholder="お問い合わせ内容（Message）" rows="3" name="message" required />
             <br />
-            <p>【ベンゾ離脱、減薬等について質問をされる方へ】</p>
-            <p className={Style.fontSmallCrimson}>・質問者個々の状態・病態に対し判断やアドバイスをする事はできません。
-              回答例は
-                <a href="https://benzofaq.com/faqforum" target="blank" rel="noreferrer noopener">
-                  こちら
-                </a>
-                の様なものになります。
+            <p>【ベンゾ離脱、減薬等について質問をされたい方へ】</p>
+            <p>『
+              <a href="https://benzofaq.com/" target="blank" rel="noreferrer noopener">
+              ベンゾフォーラム
+              </a>』
+              をご利用ください
+              （<a href="https://benzofaq.com/forums/topic/%e5%8c%bb%e7%99%82%e5%85%8d%e8%b2%ac%e4%ba%8b%e9%a0%85/" target="blank" rel="noreferrer noopener">医療免責事項</a>を必ず読んでください）。
             </p>
-            <p className={Style.fontSmallCrimson}>・なるべく書籍
-              <a href="https://www.amazon.co.jp/gp/product/B0B8BJZ5T6?&_encoding=UTF8&tag=kokkahasan-22&linkCode=ur2&linkId=d2be4a75d59c557e5612f1e0ca8667e9&camp=247&creative=1211" target="blank" rel="noreferrer noopener">
-              『ベンゾ系睡眠薬・抗不安薬からの安全な離脱方法』
-              </a>
-              をお読みになるか、余裕がない場合はとりあえずお手元に用意してお問い合わせください。回答しやすくなります（Kindle版でも構いません。キャンペーンを使えば無料で読めます）。
-            </p>
-                        
+                       
             <Form.Control as="input" style={{visibility:`hidden`}} name="_recaptcha" id="_recaptcha"/>
             <Form.Control type="text" as="input" style={{visibility:`hidden`}} name="_empty_field" />
             <Button variant="info" type="submit">送信</Button>
