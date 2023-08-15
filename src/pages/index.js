@@ -9,7 +9,7 @@ import { Container, Row, Col, Badge, Accordion, Card, Button } from 'react-boots
 import Style from './index.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faVideo,faCommentMedical } from '@fortawesome/free-solid-svg-icons'
+import { faVideo, faCommentMedical } from '@fortawesome/free-solid-svg-icons'
 
 
 const IndexPage = ({ data }) => (
@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => (
                 <Col>
                   <Badge variant="danger">新</Badge>{` `}
                   <a href="https://benzofaq.com/" target="blank" rel="noreferrer noopener">
-                  <FontAwesomeIcon icon={faCommentMedical} />『<strong>ベンゾフォーラム</strong>』
+                    <FontAwesomeIcon icon={faCommentMedical} />『<strong>ベンゾフォーラム</strong>』
                   </a>
                   <span>
                     を開設しました。
@@ -166,6 +166,7 @@ const IndexPage = ({ data }) => (
           <Row>
             <Col>
               <h2 className={Style.h2Size}>動画紹介</h2>
+              {/*
               <div>
                 <Badge variant="danger">新</Badge>
                 {` `}
@@ -182,37 +183,7 @@ const IndexPage = ({ data }) => (
                   日本語字幕翻訳：<a href="https://benzoinfojapan.org/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
               </div>
               <br />
-              {/*
-              <div>
-                <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/MC6Odw0jRj8" alt="ベンゾについて医学部でまったく教わらないこと" target="_blank" rel="noreferrer noopener">
-                  心臓病専門医クリスティー・ハーフ医師による<br />『ベンゾについて医学部でまったく教わらないこと』
-                </a>
-                <br />
-                <a href="https://youtu.be/MC6Odw0jRj8" alt="ベンゾについて医学部でまったく教わらないこと" target="_blank" rel="noreferrer noopener">
-                  <Image filename="home_06.png" alt="ベンゾについて医学部でまったく教わらないこと" />
-                </a>
-                <span className={Style.fontSmall}>出典：<a href="https://benzoinfo.com" target="_blank" rel="noreferrer noopener">Benzodiazepine Information Coalition</a>   
-                <br />
-                字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
-              </div>
-              <br />
-            
-              <div>
-                <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/n0P2l4ZSx6U" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生－ベンゾクライシス
-                  <br />
-                冒頭２分
-                </a>
-                <br />
-                <span className={Style.fontSmall}>2019年10月CNNにて放映</span>
-                <a href="https://youtu.be/n0P2l4ZSx6U" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_02.png" alt="リサ・リンのこれが人生－ベンゾクライシス" /></a>
-                <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/profiles/lisa-ling-profile" target="_blank" rel="noreferrer noopener">CNN, A Warner Media Company</a>   
-                <br />
-                字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
-              </div>
-              <br />
-            */}
+              */}
               <div>
                 <FontAwesomeIcon icon={faVideo} />
                 <a href="https://youtu.be/7ul9kCDTUCw" alt="臨床心理学者ジョーダン・ピーターソンのベンゾ離脱体験" target="_blank" rel="noreferrer noopener">
@@ -232,32 +203,65 @@ const IndexPage = ({ data }) => (
               <br />
               <div>
                 <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/0wyY1ImfmRI" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener">
-                  「リサ・リンのこれが人生－ベンゾクライシス」出演のクリシー・ティレル氏のベンゾジアゼピン離脱体験（11分）
+                <a href="https://youtu.be/MC6Odw0jRj8" alt="ベンゾについて医学部でまったく教わらないこと" target="_blank" rel="noreferrer noopener">
+                  心臓病専門医クリスティー・ハーフ医師による<br />『ベンゾについて医学部でまったく教わらないこと』
                 </a>
                 <br />
-                <a href="https://youtu.be/0wyY1ImfmRI" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_05.png" alt="リサ・リンのこれが人生－ベンゾクライシス" /></a>
+                <a href="https://youtu.be/MC6Odw0jRj8" alt="ベンゾについて医学部でまったく教わらないこと" target="_blank" rel="noreferrer noopener">
+                  <Image filename="home_06.png" alt="ベンゾについて医学部でまったく教わらないこと" />
+                </a>
                 <span className={Style.fontSmall}>出典：<a href="https://benzoinfo.com" target="_blank" rel="noreferrer noopener">Benzodiazepine Information Coalition</a>
                   <br />
                   字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
               </div>
               <br />
-              {/* 
+
               <div>
                 <FontAwesomeIcon icon={faVideo} />
-                  <a href="https://youtu.be/0lsbiczKfJY" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener">
-                    ベンゾジアゼピン『医療災害』（52分）
-                  </a>
+                <a href="https://youtu.be/n0P2l4ZSx6U" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生－ベンゾクライシス
+                  <br />
+                  冒頭２分
+                </a>
                 <br />
-                <span className={Style.fontSmall}>2017年1月アイルランド国営放送にて放映</span>
-                <a href="https://youtu.be/0lsbiczKfJY" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener"><Image filename="home_04.png" alt="ベンゾジアゼピン『医療災害』" /></a>
-                <span className={Style.fontSmall}>
-                出典：アイルランド放送協会 RTE 1 TV
-                <br />
-                字幕制作：健康生活研究会有志　監修協力：ベンゾジアゼピン情報センター
-                </span>             
+                <span className={Style.fontSmall}>2019年10月CNNにて放映</span>
+                <a href="https://youtu.be/n0P2l4ZSx6U" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_02.png" alt="リサ・リンのこれが人生－ベンゾクライシス" /></a>
+                <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/profiles/lisa-ling-profile" target="_blank" rel="noreferrer noopener">CNN, A Warner Media Company</a>
+                  <br />
+                  字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
               </div>
-              */}
+              <br />
+              <div>
+                <FontAwesomeIcon icon={faVideo} />
+                <a href="https://youtu.be/0wyY1ImfmRI" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener">
+                  「リサ・リンのこれが人生－ベンゾクライシス」出演のクリシー・ティレル氏のベンゾジアゼピン離脱体験（11分）
+                </a>
+                <br />
+                <a href="https://youtu.be/0wyY1ImfmRI" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener">
+                  <Image filename="home_05.png" alt="リサ・リンのこれが人生－ベンゾクライシス" />
+                </a>
+                <span className={Style.fontSmall}>出典：<a href="https://benzoinfo.com" target="_blank" rel="noreferrer noopener">Benzodiazepine Information Coalition</a>
+                  <br />
+                  字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
+              </div>
+              <br />
+
+              <div>
+                <FontAwesomeIcon icon={faVideo} />
+                <a href="https://youtu.be/0lsbiczKfJY" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener">
+                  ベンゾジアゼピン『医療災害』（52分）
+                </a>
+                <br />
+                <span className={Style.fontSmall}>2017年1月アイルランド国営放送にて放映<br />（135万ポンド≒２億円）</span>
+                <a href="https://youtu.be/0lsbiczKfJY" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener">
+                  <Image filename="home_08.png" alt="ベンゾジアゼピン『医療災害』" />
+                </a>
+                <span className={Style.fontSmall}>
+                  出典：アイルランド放送協会 RTE 1 TV
+                  <br />
+                  字幕制作：健康生活研究会有志　監修協力：ベンゾジアゼピン情報センター
+                </span>
+              </div>
+
             </Col>
           </Row>
           <Row>
