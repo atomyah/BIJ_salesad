@@ -1,10 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Badge } from 'react-bootstrap'
-import { faHome,faComments,faCamera,faUserMd,faHeart,faBookMedical } from '@fortawesome/free-solid-svg-icons'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Badge } from "react-bootstrap"
+import {
+  faHome,
+  faComments,
+  faCamera,
+  faUserMd,
+  faHeart,
+  faBookMedical,
+} from "@fortawesome/free-solid-svg-icons"
 
 const NavItem = styled(Link)`
   text-decoration: none;
@@ -44,13 +50,32 @@ const NavItem = styled(Link)`
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="/" style={{color: `#6d6d6d`}}>ベンゾ情報センター</NavItem>
-      <NavItem to="/basics" style={{color: `#6d6d6d`}}>一般情報</NavItem>
-      <NavItem to="/patients" style={{color: `#6d6d6d`}}>患者の方へ</NavItem>
-      <NavItem to="/doctors" style={{color: `#6d6d6d`}}>医師の方へ</NavItem>
-      <NavItem to="/medias" style={{color: `#6d6d6d`}}>メディアの方へ</NavItem>
-      <NavItem><a href="https://benzofaq.com/" target="_blank" rel="noreferrer noopener"
-         style={{ width:`120px`, fontSize: `0.9em`, color: `#6d6d6d`}}><Badge variant="danger">新</Badge>{` `}ベンゾフォーラム</a></NavItem>
+      <NavItem to="/" style={{ color: `#6d6d6d` }}>
+        トップ
+      </NavItem>
+      <NavItem to="/basics" style={{ color: `#6d6d6d` }}>
+        一般情報
+      </NavItem>
+      <NavItem to="/patients" style={{ color: `#6d6d6d` }}>
+        患者の方へ
+      </NavItem>
+      <NavItem to="/doctors" style={{ color: `#6d6d6d` }}>
+        医師の方へ
+      </NavItem>
+      <NavItem to="/medias" style={{ color: `#6d6d6d` }}>
+        メディアの方へ
+      </NavItem>
+      <NavItem>
+        <a
+          href="https://benzofaq.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+          style={{ width: `120px`, fontSize: `0.9em`, color: `#6d6d6d` }}
+        >
+          <Badge variant="danger">新</Badge>
+          {` `}ベンゾフォーラム
+        </a>
+      </NavItem>
     </>
   )
 }
