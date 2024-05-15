@@ -52,8 +52,6 @@ const IndexPage = ({ data }) => (
               <h2 className={Style.h2Size}>新着情報</h2>
               <Row>
                 <Col>
-                  <Badge variant="danger">新</Badge>
-                  {` `}
                   <a
                     href="https://benzofaq.com/"
                     target="blank"
@@ -62,41 +60,8 @@ const IndexPage = ({ data }) => (
                     <FontAwesomeIcon icon={faCommentMedical} />『
                     <strong>ベンゾフォーラム</strong>』
                   </a>
-                  <span>を開設しました。</span>
+                  <span>運営中。</span>
                   <br />
-                  <span className={Style.fontSmall}>
-                    米国のオンラインコミュニティ『
-                    <a
-                      href="http://www.benzobuddies.org/forum/index.php"
-                      target="blank"
-                      rel="noreferrer noopener"
-                    >
-                      ベンゾバディ
-                    </a>
-                    』を参考に開発しました。 ※『
-                    <a
-                      href="http://www.benzobuddies.org/forum/index.php"
-                      target="blank"
-                      rel="noreferrer noopener"
-                    >
-                      ベンゾバディ
-                    </a>
-                    』 については
-                    <a
-                      href="https://benzoinfojapan.org/medias-article/7"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >
-                      キャサリン・ピットマン博士の講演
-                    </a>
-                    をお読みください。
-                  </span>
-                  <br />
-                  {/*
-                  <a href="https://benzofaq.com/" target="blank" rel="noreferrer noopener">
-                    <Image filename="benzoforum.png" alt="ベンゾフォーラム" />
-                  </a>
-                  */}
                 </Col>
               </Row>
               {/*
@@ -131,10 +96,10 @@ const IndexPage = ({ data }) => (
                         to={`/${category}-article/${articles.num}`}
                         alt={articles.title}
                       >
-                        記事『{articles.title}』
+                        <Badge variant="danger">新</Badge>
+                        {` `}記事『{articles.title}』
                       </Link>
                       を作成しました
-                      <Badge variant="danger">新</Badge>
                     </div>
                     <div>{/* <Badge variant="info">更</Badge> */}</div>
                   </React.Fragment>
@@ -170,9 +135,9 @@ const IndexPage = ({ data }) => (
                     rel="noreferrer noopener"
                   >
                     <Image
-                      filename="book.jpg"
+                      filename="books.jpg"
                       alt="書籍『ベンゾ系睡眠薬・抗不安薬の安全な離脱方法 改訂版』"
-                      width={50}
+                      width={40}
                     />
                   </a>
                 </Col>
@@ -210,20 +175,30 @@ const IndexPage = ({ data }) => (
             <Col>
               <h2 className={Style.h2Size}>ニュースリンク</h2>
               <a
-                href="https://www.carenet.com/news/general/carenet/56584"
-                alt="ベンゾジアゼピンの使用と中止の意思決定に関する患者と精神科医の認識比較"
+                href="https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0002.html"
+                alt="ベンゾジアゼピン注意喚起（ベンゾジアゼピン受容体作動薬の依存性について）の更新"
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                「ベンゾジアゼピンの使用と中止の意思決定に関する患者と精神科医の認識比較」
+                <Badge variant="danger">新</Badge>
+                {` `}
+                『PMDAによるベンゾジアゼピン注意喚起更新』
               </a>
-              ー
-              <span className={Style.fontSmall}>
-                提供元：ケアネット. 2023/06/13
+              <br />
+              2017年3月にPMDAから発出された「ベンゾジアゼピン適正使用に関する注意喚起」が、
+              <span className={Style.fontCrimson}>
+                2024年5月更新版として内容を改訂し
               </span>
-              <p className={Style.fontSmallCrimson}>
-                一部引用：「患者は、睡眠薬または抗不安薬の中止に関して、精神科医が手順（18.3％）、タイミング（19.2％）、適切な状態（14.4％）について十分な説明をしなかったと報告した。」
-              </p>
+              、PMDAのホームページとメディナビに掲載されました。
+              <br />
+              <a
+                href="https://www.pmda.go.jp/files/000268322.pdf"
+                alt="ベンゾジアゼピン注意喚起（ベンゾジアゼピン受容体作動薬の依存性について）の更新"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                PDF-ベンゾジアゼピン受容体作動薬の依存性について
+              </a>
             </Col>
           </Row>
         </Col>
@@ -231,24 +206,61 @@ const IndexPage = ({ data }) => (
           <Row>
             <Col>
               <h2 className={Style.h2Size}>動画紹介</h2>
-              {/*
+
               <div>
                 <Badge variant="danger">新</Badge>
                 {` `}
                 <FontAwesomeIcon icon={faVideo} />
-                <a href="https://www.amazon.co.jp/%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB-Robert-Whitaker/dp/B0B8RXQ9YV?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=23SMS1UJG0UWP&keywords=%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB&qid=1677125852&s=instant-video&sprefix=%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB%2Cinstant-video%2C182&sr=1-1&linkCode=ll2&tag=kokkahasan-22&linkId=7a457bfe11a2ecd8a54e5093a040c0b5&language=ja_JP&ref_=as_li_ss_tl" alt="メディケイティングノーマル" target="_blank" rel="noreferrer noopener">
-                  ドキュメンタリー映画<br />『<strong>メディケイティングノーマル ～薬害なき処方を～</strong>』（1時間16分）が<strong>アマゾンプライム</strong>で公開されました！
+                <a
+                  href="https://youtu.be/Rp5C6BlM66k"
+                  alt="公明党厚労部会ーベンゾ情報センター管理人スピーチ全文"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {` `}
+                  2024年3月14日
+                  公明党厚労部会『第一回ベンゾジアゼピン薬剤による離脱症状について』
+                  ベンゾ情報センター管理人スピーチ全文（18分）
                 </a>
                 <br />
-                <a href="https://www.amazon.co.jp/%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB-Robert-Whitaker/dp/B0B8RXQ9YV?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=23SMS1UJG0UWP&keywords=%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB&qid=1677125852&s=instant-video&sprefix=%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB%2Cinstant-video%2C182&sr=1-1&linkCode=ll2&tag=kokkahasan-22&linkId=7a457bfe11a2ecd8a54e5093a040c0b5&language=ja_JP&ref_=as_li_ss_tl" alt="ベンゾについて医学部でまったく教わらないこと" target="_blank" rel="noreferrer noopener">
+                <a
+                  href="https://youtu.be/Rp5C6BlM66k"
+                  alt="公明党厚労部会『第一回ベンゾジアゼピン薬剤による離脱症状について』ベンゾ情報センター管理人スピーチ全文"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <Image filename="home_03.png" />
+                </a>
+              </div>
+
+              <br />
+
+              <div>
+                <Badge variant="danger">新</Badge>
+                {` `}
+                <FontAwesomeIcon icon={faVideo} />
+                <a
+                  href="https://youtu.be/0bzO_q4MkWw"
+                  alt="衆議院厚生労働委員会ベンゾジアゼピン質疑ーいさ進一議員"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {` `}
+                  2024年3月29日 衆議院厚生労働委員会『公明党厚労部会長
+                  いさ進一議員によるベンゾジアゼピン質疑』（6分）
+                </a>
+                <br />
+                <a
+                  href="https://youtu.be/0bzO_q4MkWw"
+                  alt="衆議院厚生労働委員会ベンゾジアゼピン質疑ーいさ進一議員"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <Image filename="home_04.png" />
                 </a>
-                <span className={Style.fontSmall}>製作：<a href="https://medicatingnormal.com/" target="_blank" rel="noreferrer noopener">Medicating Normal Production Team</a>
-                  <br />
-                  日本語字幕翻訳：<a href="https://benzoinfojapan.org/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
               </div>
               <br />
-              */}
+
               <div>
                 <FontAwesomeIcon icon={faVideo} />
                 {` `}
@@ -328,7 +340,7 @@ const IndexPage = ({ data }) => (
               </div>
               <br />
               */}
-              <div>
+              {/* <div>
                 <FontAwesomeIcon icon={faVideo} />
                 {` `}
                 <a
@@ -373,7 +385,7 @@ const IndexPage = ({ data }) => (
                     ベンゾジアゼピン情報センター
                   </a>
                 </span>
-              </div>
+              </div> */}
               <br />
               <div>
                 <FontAwesomeIcon icon={faVideo} />
@@ -419,7 +431,7 @@ const IndexPage = ({ data }) => (
               </div>
               <br />
 
-              <div>
+              {/* <div>
                 <FontAwesomeIcon icon={faVideo} />
                 {` `}
                 <a
@@ -452,7 +464,7 @@ const IndexPage = ({ data }) => (
                   <br />
                   字幕制作：健康生活研究会有志　監修協力：ベンゾジアゼピン情報センター
                 </span>
-              </div>
+              </div> */}
             </Col>
           </Row>
           <Row>
@@ -577,7 +589,8 @@ const IndexPage = ({ data }) => (
       <br />
       <br />
       <article className={Style.fontBlue}>
-        ※ 当サイトの記事や動画は、医学論文の翻訳、および米国NPO団体
+        ※
+        当サイトの記事や動画は、私（管理人）自身の実体験、医学論文の翻訳、および米国NPO団体
         <a
           href="https://benzoinfo.com"
           target="_blank"
@@ -586,7 +599,7 @@ const IndexPage = ({ data }) => (
           Benzodiazepine Information
           Coalition（ベンゾジアゼピンインフォメーションコーリション。以下BIC）
         </a>
-        の記事の翻訳により構成されています。BICの記事はすべてBICの
+        の医療記事の翻訳により構成されています。BICの医療記事はすべてBICの
         <a
           href="https://www.benzoinfo.com/about/#board"
           target="_blank"
